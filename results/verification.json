@@ -1,0 +1,47 @@
+{
+  "orifice": {
+    "choked_rel_err": 0.0,
+    "subsonic_rel_err": 8.881784197001252e-16
+  },
+  "eps_ntu_roundtrip_max_err": 5.3290705182007514e-14,
+  "compressor_eta_roundtrip_max_err": 1.27675647831893e-15,
+  "model_balance": {
+    "turbo_power_rel_max": 9.17947427237581e-06,
+    "mass_rel_max": 9.70709644634395e-17,
+    "points": 148
+  },
+  "synthetic_recovery": [
+    {
+      "noise_bar": 0.0,
+      "A_t_true_mm2": 1604.3974472742877,
+      "A_t_fit_mm2": 1604.3974472743441,
+      "A_t_sd_mm2": 6.459210627406608e-12,
+      "slope_true": -0.0016489147853824865,
+      "slope_fit": -0.001648914785381448,
+      "slope_sd": 8.661255728443143e-17
+    },
+    {
+      "noise_bar": 0.005,
+      "A_t_true_mm2": 1604.3974472742877,
+      "A_t_fit_mm2": 1605.9738464671573,
+      "A_t_sd_mm2": 0.8067752389420725,
+      "slope_true": -0.0016489147853824865,
+      "slope_fit": -0.001634486714118792,
+      "slope_sd": 1.0814502809546283e-05
+    },
+    {
+      "noise_bar": 0.02,
+      "A_t_true_mm2": 1604.3974472742877,
+      "A_t_fit_mm2": 1602.9453595139678,
+      "A_t_sd_mm2": 3.0198701720429972,
+      "slope_true": -0.0016489147853824865,
+      "slope_fit": -0.0016645079802688487,
+      "slope_sd": 4.051018223755205e-05
+    }
+  ],
+  "synthetic_detector": {
+    "trials": 60,
+    "false_before_onset": 0,
+    "correctly_isolated": 60
+  }
+}

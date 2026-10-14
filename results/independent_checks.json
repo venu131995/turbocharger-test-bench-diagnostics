@@ -1,0 +1,55 @@
+{
+  "TotalInputEnergy_over_FuelFlow": {
+    "mean": 11.59999978146525,
+    "std": 3.868927776771685e-06
+  },
+  "ShaftPower_over_TotalInputEnergy_vs_EffectiveEfficiency": 0.9999999836872929,
+  "ShaftPower_vs_Torque_x_omega_max_rel": 2.0164394739285996e-05,
+  "ExhMassFlow_speed_density_coefficient": {
+    "mean": 0.0015408238562881575,
+    "cv": 0.005463451162690429
+  },
+  "TCHPower_over_mdot_dT_median": 1.0600000051352387,
+  "bsfc_kg_per_kWh_if_fuel_in_kg_h": {
+    "median": 0.2655495576447561,
+    "p10": 0.2578063317182965,
+    "p90": 0.27172797213809396
+  },
+  "sentinel_999_counts": {
+    "AC_Fouling_40_Load": 135,
+    "AC_Fouling_60_Load": 719,
+    "AC_Fouling_75_Load": 222,
+    "AC_Fouling_85_Load": 101,
+    "AF_Clogging_40_Load": 123,
+    "AF_Clogging_60_Load": 114,
+    "AF_Clogging_75_Load": 219,
+    "AF_Clogging_85_Load": 227,
+    "Clogged_Injector_Nozzle1_40_60_85_Load": 137,
+    "Clogged_Injector_Nozzle2_LoadProgram": 115,
+    "CW_Pump_Cavitation_60_Load": 83,
+    "CW_Pump_Cavitation_85_Load": 668,
+    "Reference_Data": 798,
+    "Turbine_Degradation_40_Load": 140,
+    "Turbine_Degradation_60_Load": 1293,
+    "Turbine_Degradation_85_Load": 342
+  },
+  "energy_balance_bench_channels": {
+    "closure_median": 0.8831382423040581,
+    "closure_p10": 0.7948655221242367,
+    "closure_p90": 1.0864083661976593,
+    "other_loss_share_median": 0.0,
+    "note": "Other Loss is the bench's balancing term; closure = 1 shows the ledger is self-consistent, the size of Other Loss shows what the bench does not attribute"
+  },
+  "cooler_water_over_air_heat": {
+    "60-100 kW": 3.3315884565866307,
+    "100-150 kW": 3.269144066902662,
+    "150-200 kW": 1.1955677682958799,
+    "200-260 kW": 0.9034236009136991
+  },
+  "hand_point": {
+    "P_kW": 148.6245,
+    "pi_c": 1.3911768974303627,
+    "eta_c": 0.8353148161684557,
+    "K_f": 2946.11464989904
+  }
+}

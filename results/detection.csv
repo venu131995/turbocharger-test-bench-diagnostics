@@ -1,0 +1,14 @@
+run,fault,phys_delay,phys_isolated,phys_severity,phys_false_alarm,pca_delay,pca_isolated,pca_top,pca_severity,pca_false_alarm,pca24_delay,pca24_isolated,pca24_false_alarm
+AF_Clogging_40_Load,AF_Clogging,19.0000,AF_Clogging,70.0871,0.0000,31,AF_Clogging,dp_f,106.3700,0.0000,10,unclear,0.0000
+AF_Clogging_60_Load,AF_Clogging,0.0000,AF_Clogging,7.2662,0.0870,1,AF_Clogging,dp_f,19.1499,0.0000,1,AF_Clogging,0.0000
+AF_Clogging_75_Load,AF_Clogging,19.0000,AF_Clogging,86.0992,0.0000,35,AF_Clogging,dp_f,157.6382,0.0000,22,AF_Clogging,0.0000
+AF_Clogging_85_Load,AF_Clogging,17.0000,AF_Clogging,69.2434,0.0000,32,AF_Clogging,dp_f,166.8592,0.0000,19,AF_Clogging,0.0000
+AC_Fouling_40_Load,AC_Fouling,15.0000,AF_Clogging,1.0583,0.0000,14,unclear,Tlo_in,-1.7161,0.0000,14,unclear,0.0000
+AC_Fouling_60_Load,AC_Fouling,98.0000,AC_Fouling,24.1627,0.0000,38,unclear,Tex2,3.7417,0.0000,5,AC_Fouling,0.0000
+AC_Fouling_75_Load,AC_Fouling,90.0000,AC_Fouling,13.3661,0.0000,2,AC_Fouling,T_rec,2.0499,0.0000,2,AC_Fouling,0.0000
+AC_Fouling_85_Load,AC_Fouling,1.0000,AC_Fouling,1.9391,0.0000,3,AC_Fouling,T_rec,2.6324,0.0000,1,AC_Fouling,0.0000
+Turbine_Degradation_40_Load,Turbine_Degradation,23.0000,Turbine_Degradation,147.0043,0.0000,34,Turbine_Degradation,dp_ex,329.0980,0.0222,25,Turbine_Degradation,0.1333
+Turbine_Degradation_60_Load,Turbine_Degradation,0.0000,Turbine_Degradation,69.1160,0.0000,13,Turbine_Degradation,dp_ex,289.1691,0.0000,4,Turbine_Degradation,0.0000
+Turbine_Degradation_85_Load,Turbine_Degradation,0.0000,Turbine_Degradation,136.3522,0.0000,3,Turbine_Degradation,dp_ex,168.6163,0.0000,1,Turbine_Degradation,0.0000
+CW_Pump_Cavitation_60_Load,Pump_Cavitation,,,,0.0000,53,AC_Fouling,T_rec,,0.0667,1,AC_Fouling,0.2000
+CW_Pump_Cavitation_85_Load,Pump_Cavitation,,,,0.0000,66,unclear,pmax2,,0.0000,47,AC_Fouling,0.0000
