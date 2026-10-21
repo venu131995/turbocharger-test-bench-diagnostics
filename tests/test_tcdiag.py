@@ -9,6 +9,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 from tcdiag import detect, indicators as ind, io, mvem, thermo as th      # noqa: E402
 
+# the bench data are not in the repository (see README, Data); tests that need them are skipped without them
+needs_data = pytest.mark.skipif(not (io.DATA / 'Reference_Data.csv').exists(), reason='test-bench data not downloaded')
+
 
 def test_orifice_choked_matches_closed_form():
     g, R, A, p0, T0 = th.G_EXH, th.R_EXH, 1e-3, 3e5, 800.0
@@ -43,6 +46,7 @@ def test_indicators_hand_point():
     assert I['eps'][0] == pytest.approx(45.0 / 60.0)
 
 
+@needs_data
 def test_cleaning_units_and_sentinels():
     raw = io.read_raw('Reference_Data')
     d = io.clean(raw)
@@ -52,6 +56,7 @@ def test_cleaning_units_and_sentinels():
     assert np.allclose(d['m_air'] + d['m_fuel'], d['m_exh_ds'])
 
 
+@needs_data
 def test_model_balances_at_solution():
     ref = io.blocks(io.load('Reference_Data'))
     st = io.steady(ref)
@@ -65,6 +70,7 @@ def test_model_balances_at_solution():
     assert s['p4'] > s['p5'] and s['T5'] < s['T4']
 
 
+@needs_data
 def test_higher_back_pressure_lowers_boost_and_heats_exhaust():
     ref = io.blocks(io.load('Reference_Data'))
     st = io.steady(ref)
@@ -78,6 +84,7 @@ def test_higher_back_pressure_lowers_boost_and_heats_exhaust():
     assert b['p_rec'] < a['p_rec'] and b['T4'] > a['T4']
 
 
+@needs_data
 def test_physics_monitor_flags_and_isolates_air_filter_run():
     b = io.blocks(io.load('AF_Clogging_85_Load'))
     o = detect.physics_monitor(b)
